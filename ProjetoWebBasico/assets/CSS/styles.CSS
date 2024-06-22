@@ -1,61 +1,196 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif;
+}
+
 body {
-    font-family: "Catamaran", sans-serif;
-   
-  }
+  font-family: "Catamaran", sans-serif;
+}
 
-  div{
-    width: 90%;
-    height: 500px;
-    margin: 10px auto;
-    padding: 30px 0;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 10px 22px #000;
-    background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .3)),
-     url(../imagens/pexels-pixabay-159376.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    border-radius: 7px;
+.background-div {
+  width: 100%;
+  height: 500px;
+  margin: 10px auto;
+  padding: 30px 0;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 22px rgb(82, 147, 211);
+  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .3)),
+    url(../imagens/pexels-pixabay-159376.jpg);
+    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 7px;
+}
 
-  }
+div h2 {
+  font-size: 45px;
+  margin: 50px 30px;
+  color: #fff;
+}
 
-  div h2{
-    font-size: 45px;
-    margin: 50px 30px;
-    color: #fff;
+div p {
+  font-size: 18px;
+  margin: 30px 30px 60px;
+  width: 40%;
+  color: #fff;
+  font-weight: 700;
+}
+/* aqui estou usando um pseudo-elemento aonde o colocar:: e o selection ele vai fazer a formtação de um elemento especifico selecionado */
+div p::selection{ 
+background-color: #dc143c;
+color: #fff;
+font-weight: 600;
+}
 
-  }
+div a {
+  margin: 30px;
+  text-decoration: none;
+  border: 2px solid rgb(82, 147, 211);
+  background-color: rgb(82, 147, 211);
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 7px;
+  font-weight: 600;
+}
 
-  div p {
-    font-size: 18px;
-    margin: 30px 30px 60px;
-    width: 40%;
-    color: #fff;
-    font-weight: 700;
+div a:hover {
+  background-color: transparent;
+  color: rgb(82, 147, 211);
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+.divino{
+  width: 100%;
+  list-style: none;
+  font-weight: 600;
+  display: flex;
+  padding: 30px 0;
+  box-sizing: border-box;
+  align-items: center;
+  height: auto;
+  border-radius: 5px;
+  background-color: rgb(82, 147, 211);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% center;
+  border: 2px solid 10 #dc143c;
+  box-shadow: 1px 1px 1px 22pxrgb(82, 147, 211);
+}
+
+li {
+  color: #2d2f2d;
+  font-optical-sizing: 30px;
+  font-size: medium;
+  width: 150px;
+  border-radius: 5px;
+  height: 40px;
+
+  background-color: #fff;
+  margin: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: width 0.3s, height 0.3s, background-color 0.3s, color 0.3s;
+  /* Adiciona transições suaves */
+}
+
+li:hover {
+  width: 300px;
+  height: 50px;
+  background-color: #dc143c;
+  color: #fff;
+}
+
+ .table {
+   width: 100%;
+   list-style: none;
+   font-weight: 600;
+   display: flex;
+   padding: 30px 0;
+   box-sizing: border-box;
+   align-items: center;
+   height: auto;
+   border-radius: 5px;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../imagens/pexels-tomfisk-20766118.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 25% center;
+   border: 2px solid rgba(0, 0, 0, 0.6);
+   box-shadow: 1px 1px 1px 22px rgb(82, 147, 211);
+ }
+
+ table {
+   border: 1px solid #eeecec;
+   border-collapse: collapse;
+   width: 80%;
+   margin: 30px auto;
+   color: #333;
+   background-color: rgba(0, 0, 0, 0.5);
+   /* Adiciona um fundo translúcido */
+   border-radius: 5px;
+   /* Adiciona borda arredondada */
+ }
+
+ td,
+ th {
+   border: 1px solid #fcfcfc;
+   padding: 8px;
+   text-align: center;
+   vertical-align: middle;
+   color: #fff;
+   /* Cor do texto */
+ }
+
+ thead th {
+   height: 40px;
+   background-color: #100104;
+   border: 2px solid #010102;
+   text-transform: uppercase;
+   font-weight: bold;
+ }
+
+ tbody tr {
+   background-color: rgba(0, 0, 0, 0.7);
+   /* Fundo translúcido para linhas normais */
+   color: #fff;
+ }
+
+ tbody tr:hover {
+   background-color: transparent;
+   /* Torna o fundo transparente ao passar o mouse */
+   cursor: pointer;
+ }
+
+ tfoot td {
+   background-color: rgba(0, 0, 0, 0.7);
+   /* Fundo translúcido para rodapé */
+   color: #fff;
+ }
+
+ tfoot td:hover {
+   background-color: transparent;
+   /* Torna o fundo transparente ao passar o mouse */
+   cursor: pointer;
+ }
+
+ caption {
+   caption-side: top;
+   font-size: 1.5em;
+   margin: 10px;
+   font-weight: bold;
+   color: #fbf4f4;
+ }
 
 
-  }
-
-  div a {
-    margin: 30px;
-    text-decoration: none;
-    border: 2px solid rgb(82, 147, 211);
-    background-color: rgb(82, 147, 211);
-    color: #fff;
-    padding: 8px 30px;
-    border-radius: 7px;
-    font-weight: 600;
-
-  }
-
-  div a:hover {
-    background-color: transparent;
-    color: rgb(82, 147, 211);
-  }
-  
   
 /* div{
     width: 80%;
