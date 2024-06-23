@@ -190,6 +190,22 @@ li:hover {
    color: #fbf4f4;
  }
 
+.icon {
+ border: 1px solid rgb(82, 147, 211);
+ padding: 15px;
+ border-radius: 5px;
+ font-size: 35px;
+ margin: 0 20px;
+ color: rgb(82, 147, 211);
+ transition: .5s;
+ }
+
+ .icon:hover {
+  background-color: #dc143c;
+  color: #fff;
+  border-color: transparent;
+ }
+
 
   
 /* div{
