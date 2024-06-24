@@ -65,6 +65,19 @@ div a:hover {
   color: rgb(82, 147, 211);
 }
 
+.menu{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color:#dc143c;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+}
+
 /* --------------------------------------------------------------------------------------------------------------- */
 .divino{
   width: 100%;
