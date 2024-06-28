@@ -1,0 +1,155 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --bg-blue-1: #b3ae15;
+    --bg-blue-2: #F6F9FF;
+    --bg-blue-3: #6583b9;
+    --margin-top: 100px;
+}
+
+button:focus {
+    box-shadow: 0;
+}
+
+.educa-money-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, padding-right 0.3s ease;
+}
+
+.educa-money-btn:hover {
+    background-color: #0056b3;
+    padding-right: 30px;
+}
+
+.educa-money-btn::after {
+    content: " →";
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.educa-money-btn:hover::after {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.gold-container {
+    background-color: gold;
+    height: 100%;
+    min-height: 150px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.gold-container:hover {
+    box-shadow: 0 0 15px #04146e;
+}
+
+.platinum-container {
+    background-color: silver;
+    height: 100%;
+    min-height: 150px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.platinum-container:hover {
+    box-shadow: 0 0 15px #04146e;
+}
+
+.gratuito-container {
+    background-color: #cd7f32;
+    height: 100%;
+    min-height: 150px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.gratuito-container:hover {
+    box-shadow: 0 0 15px #04146e;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    color: var(--bg-blue-1);
+    font-weight: 800;
+}
+
+.logo-icon {
+    color: var(--bg-blue-1);
+}
+
+.my-mt {
+    margin-top: var(--margin-top);
+}
+
+.nav-item a {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.my-title {
+    color: var(--bg-blue-1);
+    font-weight: 700;
+
+}
+
+.bg-blue-2 {
+    background-color: var(--bg-blue-2);
+}
+
+.sobre {
+    min-height: 75vh;
+}
+
+
+.icon {
+    font-size: 60px;
+    color: var(--bg-blue-1);
+    margin: 24px 0;
+    transition: .5s;
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    background-color: var(--bg-blue-2);
+}
+
+.card:hover .icon {
+    transform: scale(1.5);
+}
+
+.icon-social,
+.icon-contato {
+    font-size: 2rem;
+    color: var(--bg-blue-1);
+    transition: .5s;
+}
+
+.icon-social:hover {
+    color: var(--bg-blue-3);
+}
+textarea {
+    resize: none;
+    height: 130px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+
+@media(max-width:959px) {
+    #sobre{
+        text-align: center;
+    }
+}
